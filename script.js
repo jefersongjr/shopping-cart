@@ -66,9 +66,6 @@ const getId = async () => {
   }));
 };
 
-getId();
-
 window.onload = () => {
-  productList();
-  fetchItem('MLB1615760527');
+  getId();
 };
