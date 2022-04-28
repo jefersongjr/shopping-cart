@@ -1,5 +1,4 @@
-const url = "https://api.mercadolibre.com/items/"
-
+const url = 'https://api.mercadolibre.com/items/';
 
 const fetchItem = async (id) => {
   const apiIdUrl = `${url}${id}`;
