@@ -53,7 +53,7 @@ const productList = async () => {
   });
 };
 
-const getId = async () => {
+const addItemCart = async () => {
   await productList();
   const cartOl = document.querySelector('.cart__items');
   const buttons = document.querySelectorAll('.item__add');
@@ -67,5 +67,5 @@ const getId = async () => {
 };
 
 window.onload = () => {
-  getId();
+  addItemCart();
 };
