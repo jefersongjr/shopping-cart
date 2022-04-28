@@ -49,7 +49,7 @@ const productList = async () => {
     const sku = id;
     const name = title;
     const image = thumbnail;
-    sectionItems.appendChild(createProductItemElement({sku, name, image}));
+    sectionItems.appendChild(createProductItemElement({ sku, name, image }));
   });
 };
 
