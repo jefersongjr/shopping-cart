@@ -28,6 +28,4 @@ describe('2 - Teste a função fecthItem', () => {
     const errorResponse = await fetchItem();
     expect(errorResponse).toEqual(new Error('You must provide an url'));
   })
-
- // fail('Teste vazio');
 });
