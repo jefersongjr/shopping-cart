@@ -55,4 +55,5 @@ const productList = async () => {
 
 window.onload = () => {
   productList();
+  fetchItem('MLB1341706310');
 };
