@@ -53,7 +53,17 @@ const productList = async () => {
   });
 };
 
+const getId = async () => {
+  await productList();
+  const buttons = document.querySelectorAll('.item__add');
+  buttons.forEach((button) => button.addEventListener('click', () => {
+      alert('add para o carrinho?');
+  }));
+};
+
+getId();
+
 window.onload = () => {
   productList();
-  fetchItem('MLB1341706310');
+  fetchItem('MLB1615760527');
 };
