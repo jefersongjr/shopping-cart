@@ -61,7 +61,7 @@ const getId = async () => {
     const getIdItem = button.parentNode.querySelector('.item__sku');
     const idItem = getIdItem.innerHTML;
     const url = await fetchItem(idItem);
-    const { id: sku, title: name, base_price: salePrice } = url;
+    const { id: sku, title: name, price: salePrice } = url;
     cartOl.appendChild(createCartItemElement({ sku, name, salePrice }));
   }));
 };
