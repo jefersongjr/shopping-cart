@@ -70,13 +70,23 @@ const addItemCart = async () => {
   }));
 };
 
-const x = () => {
+const salveCart = () => {
   const y = getSavedCartItems();
   cartOl.addEventListener('click', cartItemClickListener);
   cartOl.innerHTML = y;
 };
 
+const btnClear = () => {
+  const btn = document.querySelector('.empty-cart');
+  btn.addEventListener('click', () => {
+    cartOl.innerHTML = '';
+    localStorage.clear();
+  });
+};
+
+btnClear();
+
 window.onload = () => {
   addItemCart();
-  x();
+  salveCart();
 };
